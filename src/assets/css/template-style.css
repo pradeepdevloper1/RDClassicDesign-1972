@@ -481,6 +481,9 @@ aside.aside-left {
 .text-dark-hover:hover, .primary-color-dark .text-primary-hover:hover {
   color: #002633 !important;
 } 
+.text-active:hover, .primary-color-primary .text-primary-hover:hover {
+  color:  linear-gradient(to top left, #33ccff 0%, #0066ff 100%);
+}
 
 /* Background Colors */
 .background-white, .primary-color-white .background-primary {

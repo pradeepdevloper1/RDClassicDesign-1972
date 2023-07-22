@@ -28,10 +28,11 @@
             <div class="top-nav right">
               <p class="nav-text"></p>
               <ul class="right chevron">
-                <li><a routerLink="/home">Home</a></li>
-                <li><a routerLink="/about">About Us</a></li>             
-                <li><a routerLink="/contact">Contact</a></li>
-              </ul>
+                <li><a class="text-primary-hover"  routerLink="/home">Home</a></li>
+                <li><a class="text-primary-hover" routerLink="/gallery">Gallery</a></li>             
+                <li><a class="text-primary-hover" routerLink="/about">About Us</a></li>             
+                <li><a class="text-primary-hover" routerLink="/contact">Contact</a></li>
+              </ul>          
             </div>
           </div>  
         </nav>
@@ -235,26 +236,31 @@
               <!-- Collumn 1 -->              
               <div class="s-12 m-12 l-4 margin-m-bottom-30">
                 <h3 class="text-size-16">Company Address</h3>
-                <p class="text-size-14">
-                   A-2/55<br>
-                   New Kondli<br> 
-                   Delhi-11096
+                <p class="text-size-14 text-primary-hover">
+                  {{addressLine1}}<br>
+                  {{addressLine2}}<br> 
+                  {{addressLine3}}
                 </p>               
               </div>
               <!-- Collumn 2 -->
               <div class="s-12 m-12 l-4 margin-m-bottom-30">
                 <h3 class="text-size-16">E-mail</h3>
                 <p class="text-size-14">
-                   rdclassicdesign@gmail.com<br>
-                   rdclassicdesign1972@gmail.com
+                  <a class="text-primary-hover"
+                  href="mailto:{{emailID1}}">{{emailID1}}</a><br>
+                  <a class="text-primary-hover"
+                  href="mailto:{{emailID2}}">{{emailID2}}</a><br>
+                  <a class="text-primary-hover"
+                  href="mailto:{{emailID3}}">{{emailID3}}</a>
                 </p>              
               </div>
               <!-- Collumn 3 -->
               <div class="s-12 m-12 l-4 ">
                 <h3 class="text-size-16">Phone Numbers</h3>
                 <p class="text-size-14">
-                   91+9818815002<br>
-                   91+8285653798
+                  <a class="text-primary-hover" href="tel:{{contactNumber1}}">{{contactNumber1}}</a><br>
+                  <a class="text-primary-hover" href="tel:{{contactNumber2}}">{{contactNumber2}}</a><br>
+                  <a class="text-primary-hover" href="tel:{{contactNumber3}}">{{contactNumber3}}</a>
                 </p>             
               </div>
             </div>

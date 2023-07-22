@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en-US">
 
 <head>
@@ -9,9 +8,12 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,400,600,900&subset=latin-ext" rel="stylesheet">
     <script type="text/javascript" src="../../assets/js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body class="size-1140">
+    <!-- PREMIUM FEATURES BUTTON -->
     <div id="page-wrapper">
         <!-- HEADER -->
         <header role="banner" class="position-absolute margin-top-30 margin-m-top-0 margin-s-top-0">
@@ -41,81 +43,20 @@
 
         <!-- MAIN -->
         <main role="main">
-            <!-- Content -->
             <article>
                 <header class="section background-white">
-                    <div class="line text-center">
-                        <h1
-                            class="text-dark text-s-size-30 text-m-size-40 text-l-size-headline text-thin text-line-height-1">
-                            Contact Us</h1>
-                        <p class="margin-bottom-0 text-size-16 text-dark">Our houses are a reflection of our personalities. They are safe and beautiful places to retreat and reflect. And we want them to look a certain way and feel a certain vibe, this is where Interior Design comes in. Interior design is a combination of art, decorating, and architecture.<br>
-                            It's more than just having walls and a roof. It's about making your house a home.</p>
-                    </div>
+                   <app-carousel [images]="images"
+                   [autoSlide]="true"></app-carousel>
+                   <br>
+                   <app-carousel [images]="images2"
+                   [autoSlide]="true"></app-carousel>
+                   <br>
+                   <app-carousel [images]="images3"
+                   [autoSlide]="true"></app-carousel>
+                   <br>
+                   <app-carousel [images]="images4"
+                   [autoSlide]="true"></app-carousel>
                 </header>
-                <section class="full-width background-dark">
-                    <div class="s-12 m-12 l-6">
-                        <!-- Change the background image -->
-                        <div style="background-image: url(../../assets/img/img-contact.jpg);" class="contact-image">
-                        </div>
-                    </div>
-                    <div class="s-12 m-12 l-6 text-center">
-                        <div class="padding-2x">
-                            <i class=" icon-sli-location-pin text-white text-size-30 center"></i>
-                            <h2 class="text-size-20 margin-bottom-0 text-white">Company Address</h2>
-                            <p class="text-size-14 text-primary-hover">
-                                {{addressLine1}}<br>
-                                {{addressLine2}}<br>
-                                {{addressLine3}}
-                            </p>
-                            <i class="icon-sli-envelope text-white text-size-30 center margin-top-20"></i>
-                            <h2 class="text-size-20 margin-bottom-0 text-white">E-mail</h2>
-                            <a class="text-primary-hover"
-                                href="mailto:{{emailID1}}">{{emailID1}}</a><br>
-                            <a class="text-primary-hover"
-                                href="mailto:{{emailID2}}">{{emailID2}}</a><br>
-                            <a class="text-primary-hover"
-                                href="mailto:{{emailID3}}">{{emailID3}}</a>
-                            <i class="icon-sli-earphones-alt text-white text-size-30 center margin-top-20"></i>
-                            <h2 class="text-size-20 margin-bottom-0 text-white">Phone Numbers</h2>
-                            <a class="text-primary-hover" href="tel:{{contactNumber1}}">{{contactNumber1}}</a><br>
-                            <a class="text-primary-hover" href="tel:{{contactNumber2}}">{{contactNumber2}}</a><br>
-                            <a class="text-primary-hover" href="tel:{{contactNumber3}}">{{contactNumber3}}</a><br>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="section background-white">
-                    <div class="s-12 m-12 l-4 center">
-                        <h4 class="text-size-20 margin-bottom-20 text-dark text-center">Contact Us</h4>
-                        <form name="contactForm" class="customform" method="post">
-                            <div class="s-12">
-                                <div class="margin">
-                                    <div class="s-12 m-12 l-6">
-                                        <input name="email" class="required email" placeholder="Your e-mail"
-                                            title="Your e-mail" type="text">
-                                        <p class="email-error form-error">Please enter your e-mail.</p>
-                                    </div>
-                                    <div class="s-12 m-12 l-6">
-                                        <input name="name" class="name" placeholder="Your name" title="Your name"
-                                            type="text">
-                                        <p class="name-error form-error">Please enter your name.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="s-12">
-                                <input name="subject" class="subject" placeholder="Subject" title="Subject" type="text">
-                                <p class="subject-error form-error">Please enter the subject.</p>
-                            </div>
-                            <div class="s-12">
-                                <textarea name="message" class="required message" placeholder="Your message"
-                                    rows="3"></textarea>
-                                <p class="message-error form-error">Please enter your message.</p>
-                            </div>
-                            <div class="s-12"><button class="s-12 submit-form button background-primary text-white"
-                                    type="submit">Submit</button></div>
-                        </form>
-                    </div>
-                </section>
             </article>
         </main>
 
@@ -161,11 +102,10 @@
                         <!-- Collumn 3 -->
                         <div class="s-12 m-12 l-4 ">
                             <h3 class="text-size-16">Phone Numbers</h3>
-                            <p class="text-size-14">                                	
-                            <a class="text-primary-hover" href="tel:{{contactNumber1}}">{{contactNumber1}}</a><br>
-                            <a class="text-primary-hover" href="tel:{{contactNumber2}}">{{contactNumber2}}</a><br>
-                            <a class="text-primary-hover" href="tel:{{contactNumber3}}">{{contactNumber3}}</a>
-
+                            <p class="text-size-14">
+                                <a class="text-primary-hover" href="tel:{{contactNumber1}}">{{contactNumber1}}</a><br>
+                                <a class="text-primary-hover" href="tel:{{contactNumber2}}">{{contactNumber2}}</a><br>
+                                <a class="text-primary-hover" href="tel:{{contactNumber3}}">{{contactNumber3}}</a>
                             </p>
                         </div>
                     </div>

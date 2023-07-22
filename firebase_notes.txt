@@ -1,5 +1,8 @@
+https://www.youtube.com/watch?v=w7xKZ5PWizs&ab_channel=SameerSaini
+https://firebase.google.com/
 ng build --configuration production --aot
 npm i -g firebase-tools
 firebase login
 firebase init 
+ydistynn
 firebase deploy
